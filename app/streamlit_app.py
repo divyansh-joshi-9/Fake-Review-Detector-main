@@ -1,8 +1,12 @@
+#!/usr/bin/env python3
+from __future__ import annotations
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "src"))
+
+import joblib, pandas as pd, streamlit as st
 
 from clean_text import clean_text
 from features import extract_numeric_features
