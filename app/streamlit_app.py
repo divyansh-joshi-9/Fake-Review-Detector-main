@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1] / "src"))
 import joblib, pandas as pd, streamlit as st
-from src.clean_text import clean_text
+from clean_text import clean_text
 from features import extract_numeric_features
 PIPE_PATH = Path(__file__).resolve().parents[1] / "outputs" / "pipeline.joblib"
 st.set_page_config(page_title="Fake Review Detector", page_icon="🕵️", layout="centered")
