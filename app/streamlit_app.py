@@ -33,3 +33,17 @@ if btn:
         st.metric("Prediction", label)
         st.progress(prob if label=="FAKE" else 1-prob, text=f"Fake probability: {prob:.1%} | Threshold: {thr:.2f}")
 st.info("Tips: Excessive exclamation marks, ALL-CAPS, repeated clichés, and mentions of discounts/free samples can indicate synthetic reviews.", icon="💡")
+# --- Footer ---
+st.markdown("---")
+
+st.markdown(
+    """
+    <div style="text-align: center; padding: 10px;">
+        Made by <b>Divyansh Joshi</b> ☕<br>
+        <a href="https://github.com/divyansh-joshi-9/fake-detection" target="_blank">
+            GitHub Repository
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
